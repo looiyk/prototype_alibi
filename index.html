@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<style>
+			body{
+				font-size: 100%;
+				margin: 15px;
+				background: #666;
+				color: #fff;
+
+			}
+
+			h1 {
+				color:maroon;
+				font-family: verdana
+			}
+			input {
+
+			}
+		</style>
+
+
+		<title>
+			My first project
+			Login page
+		</title>
+	</head>
+
+	<body>
+		<h1>
+			Login
+		</h1>
+
+		<h4>
+			Welcome to Alibi, Please sign in
+		</h4>
+	<form action="./bin/controller/con_login.php" method="post">
+		User Name:
+		<br>
+		<input type="text" name="user_name" placeholder="username">
+		<br>
+
+		Password:
+		<br>
+		<input type="password" name="user_password" placeholder="******">
+		<br>
+
+		<input type="submit" name="submit" value="login">
+	</form>
+
+	<form action="./bin/model/form_registration.php" method="post">
+		<input type="submit" name="registration" value="Sign Up">
+	</form>
+
+	 
+	</body>
+</html>
