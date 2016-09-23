@@ -14,6 +14,8 @@
 		</title>
 	</head>
 	<body>
+	<?php include "../controller/con_user_session.php";
+	?>
 		<div>
 			<p>
 				<a href="http://prototype.alibi.com/bin/view/user_profile.php">
