@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html>
-<style type="text/css">
-	body {
-		font-size: 100%;
-		margin: 15px;
-		background: #666;
-		color: #fff;
-	}
-</style>
+<link rel="stylesheet" type="text/css" href="../css/main_page.css">
 	<head>
 		<title>
 			main_page
@@ -38,11 +31,14 @@
 		</div>
 		<p>Sup! main page</p>
 		<div>
-			<p>
-				<a href="http://prototype.alibi.com/try/PostItNotes/postItNotes.php">
-					<input type="submit" name="user_profile" value="Post It Notes">
-				</a>
-			</p>
+			<div class="controls">
+				<img class="New" src="../src/note.png"/>
+			</div>
+			<div class="postItNotes">
+				<ul class="notes"/>
+				<?php include("../model/post_it_note.php"); ?>
+				</ul>
+			</div>
 		</div>
 
 	</body>
