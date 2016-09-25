@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html>
-<style type="text/css">
-	body {
-		font-size: 100%;
-		margin: 15px;
-		background: #666;
-		color: #fff;
-	}
-</style>
+<link rel="stylesheet" type="text/css" href="../css/main_page.css">
 	<head>
 		<title>
 			main_page
@@ -16,7 +9,7 @@
 	<body>
 	<?php include "../controller/con_user_session.php";
 	?>
-		<div class="foobar">
+		<div>
 			<p>
 				<a href="http://prototype.alibi.com/bin/view/user_profile.php">
 					<input type="submit" name="user_profile" value="Profile">
@@ -24,7 +17,7 @@
 			</p>
 		</div>
 
-		<div class="foobar">
+		<div>
 			<p>
 				<a href="http://prototype.alibi.com/bin/user_settings.php">
 					<input type="submit" name="user_setting" value="Settings">
@@ -37,12 +30,15 @@
 			</p>
 		</div>
 		<p>Sup! main page</p>
-		<div class="postitnotes">
-			<p>
-				<a href="http://prototype.alibi.com/try/PostItNotes/postItNotes.php">
-					<input type="submit" name="user_profile" value="Post It Notes">
-				</a>
-			</p>
+		<div>
+			<div class="controls">
+				<img class="New" src="../src/note.png"/>
+			</div>
+			<div class="postItNotes">
+				<ul class="notes"/>
+				<?php include("../model/post_it_note.php"); ?>
+				</ul>
+			</div>
 		</div>
 
 	</body>
