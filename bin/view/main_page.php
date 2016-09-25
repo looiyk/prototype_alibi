@@ -16,7 +16,7 @@
 	<body>
 	<?php include "../controller/con_user_session.php";
 	?>
-		<div>
+		<div class="foobar">
 			<p>
 				<a href="http://prototype.alibi.com/bin/view/user_profile.php">
 					<input type="submit" name="user_profile" value="Profile">
@@ -24,7 +24,7 @@
 			</p>
 		</div>
 
-		<div>
+		<div class="foobar">
 			<p>
 				<a href="http://prototype.alibi.com/bin/user_settings.php">
 					<input type="submit" name="user_setting" value="Settings">
@@ -37,7 +37,7 @@
 			</p>
 		</div>
 		<p>Sup! main page</p>
-		<div>
+		<div class="postitnotes">
 			<p>
 				<a href="http://prototype.alibi.com/try/PostItNotes/postItNotes.php">
 					<input type="submit" name="user_profile" value="Post It Notes">
