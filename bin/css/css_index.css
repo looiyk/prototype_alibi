@@ -1,0 +1,18 @@
+body{
+	font-size: 100%;
+	background: black;
+	background-image: url("../src/giphy.gif");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: black;
+	background-origin: content-box;
+	background-size: cover;
+
+}
+
+.title h1{
+	color: maroon;
+	font-family: verdana
+
+}
+
