@@ -1,16 +1,84 @@
+* {
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
 body{
+	position: relative;
 	font-size: 100%;
-	margin: 15px;
-	background: #666;
-	color: #fff;
+	background: black;
+	background-image: url("../src/shooting_star_index.gif");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: black;
+	background-origin: content-box;
+	background-size: cover;
 
 }
 
-h1 {
-	color:maroon;
-	font-family: verdana
+.title{
+	position: relative;
+  	width: 100%;
+  	display: block;	
+ 	padding-left: 270px;
+	padding-top: 200px;
+  	font-size: 20px;
+  	color: maroon;
+  	font-family: verdana;
 }
 
-input {
+.sub-title{
+	position: relative;
+	width: 100%;
+	padding: 15px;
+	font-size: 20px;
+	color: white;
+	font-family: verdana;
+}
+
+form{
+	font-size: 100%;
+	color: white;
+	font-family: verdana;
+	padding-left: 290px;
+}
+
+.form-login{
+	position: relative;
+	font-family: verdana;
+	color: white;
+}
+
+.form-login input{
+	font-family: verdana;
+	font-size: 100%;
+	padding-left: 10px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+
+
+	/*
+	border-right: 50%;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	*/
+}
+
+#submit {
+	margin-top: 10px;
+	padding: 0px 0px 0px 0px;
+	font-family: verdana;
+	font-size: 100%;
+}
+
+#submit-register {
+	font-family: verdana;
+	font-size: 100%;
+	margin-top: 5px;
 
 }
