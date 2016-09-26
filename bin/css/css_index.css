@@ -52,7 +52,6 @@ form{
 	position: relative;
 	font-family: verdana;
 	color: white;
-	float: left;
 }
 
 .form-login input{
@@ -75,13 +74,11 @@ form{
 	padding: 0px 0px 0px 0px;
 	font-family: verdana;
 	font-size: 100%;
-
 }
 
 #submit-register {
 	font-family: verdana;
 	font-size: 100%;
 	margin-top: 5px;
-	float: left;
 
 }
