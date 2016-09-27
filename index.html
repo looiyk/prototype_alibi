@@ -2,6 +2,7 @@
 <html>
 	<head>
 	<link rel="stylesheet" type="text/css" href="./bin/css/css_index.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<title>
 			My first project
 			Login page
@@ -35,8 +36,53 @@
 			<input id="submit" type="submit" name="submit" value="login">
 		</form>
 	</div>
-		<form action="./bin/model/form_registration.php" method="post">
-		<input id="submit-register" type="submit" name="registration" value="Sign Up">
-	</form>
+	<button id="submit-register">Sign Up</button>
+
+	<script >
+
+		$(document).ready(function(){
+			$("#submit-register").click(function(){
+				$("#form1").toggle("slow");
+				//$("#form2").show("slow");
+			});
+			
+		});
+	</script>
+	<div class="form-register">
+		<form action="./bin/controller/con_user_registration.php" style="display: none;" id="form1" method="post">
+			Username: 
+			<br>
+			<input type="text" name="user_name" placeholder="username" required>
+			<br>
+
+			Password:
+			<br>
+			<input type="password" name="user_password" placeholder="password" required>
+			<br>
+
+			Email:
+			<br>
+			<input type="text" name="user_email" placeholder="placeholder">
+			<br>
+
+			Secret Question:
+			<br>
+			<input type="text" name="user_secret_question" placeholder="Mother's maiden name?">
+			<br>
+
+			Secret Answer:
+			<br>
+			<input type="text" name="user_secret_answer" placeholder="derp">
+			<br>
+
+			Gender: <br>
+			<input type="radio" name="user_gender" value="Male"> Male <br>
+			<input type="radio" name="user_gender" value="Female"> Female <br>
+			<input type="radio" name="user_gender" value="Unspeakable"> Unspeakable <br>
+
+			<input type="submit" name="submit" value="Sign Up">
+
+
+		</form>
 	</body>
 </html>
